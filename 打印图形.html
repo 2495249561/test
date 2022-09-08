@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+</head>
+<body>
+	<script>
+	//209000943王春宇
+    var line = 5;//定义行数
+    for (var i = 1;i<=line;i++){
+        for (var j = 1;j<=line-i;j++){
+            document.write("&ensp;");//输出空格
+        }
+        for (var k =1;k<=i;k++){
+            document.write("* &ensp;");//输出*和空格
+        }
+        document.write("<br>");//换行
+		}
+	</script>
+	<script>
+		    for (x=0;x<5;x++) {//定义变量x来约束条件
+		        for (y=x; y <=5; y++) {//定义y来表示空格
+		            document.write("&emsp;");
+		        }
+		            for (z = 1; z<=5; z++) {//定义z来表示*
+		                document.write("&emsp;"+"*")
+		            }//利用for循环来控制空格和*的输出
+		        document.write("<br>")//换行
+		    }
+	</script>
+	<script>
+var i,j,k;
+	for(i=1;i<=3;i++){//前三行
+		for(j=1;j<=3-i;j++){			
+			document.write("&nbsp;&nbsp;");       //3-j 控制空格的数量
+		}
+		for(k=1;k<=2*i-1;k++){			
+			document.write("*&nbsp;");     //2*i-1 控制*的数量
+		}
+		document.write("<br/>");
+	}//后两行
+	for(i=1;i<=3;i++){		
+		for(j=1;j<=i;j++){		
+			document.write("&nbsp;&nbsp;");	     //i控制空格的数量
+		}
+		for(k=1;k<=5-2*i;k++){			
+			document.write("*&nbsp;");        // 5-2*i控制*的数量
+		}
+		document.write("<br/>");
+	}
+	</script>
+
+</body>
+</html>
