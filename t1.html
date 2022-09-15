@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+</head>
+<body>
+	<script>
+	//209000943王春宇
+	//document.write("209000943王春宇");
+	document.write("<br>");
+    var line = parseInt(prompt("请输入打印的行数"));//定义行数
+    for (var i = 1;i<=line;i++){
+        for (var j = 1;j<=line-i;j++){
+            document.write("&ensp;");//输出空格
+        }
+        for (var k =1;k<=i;k++){
+            document.write("* &ensp;");//输出*和空格
+        }
+        document.write("<br>");//换行
+		}
+		    for (x=0;x<line;x++) {//定义变量x来约束条件
+		        for (y=x; y <=line; y++) {//定义y来表示空格
+		            document.write("&emsp;");
+		        }
+		            for (z = 1; z<=line; z++) {//定义z来表示*
+		                document.write("&emsp;"+"*")
+		            }//利用for循环来控制空格和*的输出
+		        document.write("<br>")//换行
+		    }
+	</script>
+
+</body>
+</html>
